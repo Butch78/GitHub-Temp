@@ -1,0 +1,11 @@
+{
+  "Name": "AgriBio-GOSLIM file",
+  "Path": "/dropzone-goslim",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "UTF-8",
+  "Extension": "csv",
+  "Validated": false,
+  "FileDefType": "Cloud Blob folder"
+}

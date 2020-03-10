@@ -1,0 +1,10 @@
+{
+  "Name": "Matthew-Cluster",
+  "Version": "Canonical | UbuntuServer | 16.04-LTS",
+  "Tier": "Standard_NC12",
+  "MinWorkers": 5,
+  "MaxWorkers": 999,
+  "EnvNames": "",
+  "EnvValues": "",
+  "ClusterDefType": "Azure Batch Pool"
+}
