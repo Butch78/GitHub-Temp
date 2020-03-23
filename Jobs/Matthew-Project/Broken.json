@@ -1,0 +1,13 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Matthew-Project",
+  "JobName": "Broken",
+  "Logging": 0,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}

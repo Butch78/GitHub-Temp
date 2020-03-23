@@ -1,0 +1,11 @@
+{
+  "Name": "PARQUET CSV",
+  "Path": "C:\\ProgramData\\CSV",
+  "FileFormat": "Parquet",
+  "Delimiter": "",
+  "Header": false,
+  "Encoding": "UTF-8",
+  "Extension": "parquet",
+  "Validated": false,
+  "FileDefType": "File System"
+}

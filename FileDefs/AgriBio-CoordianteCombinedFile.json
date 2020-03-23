@@ -1,0 +1,11 @@
+{
+  "Name": "AgriBio-CoordianteCombinedFile",
+  "Path": "/dropzone-umap",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "UTF-8",
+  "Extension": "csv",
+  "Validated": false,
+  "FileDefType": "Cloud Blob folder"
+}
