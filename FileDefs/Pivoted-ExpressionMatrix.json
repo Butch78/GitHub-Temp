@@ -7,5 +7,6 @@
   "Encoding": "UTF-8",
   "Extension": "csv",
   "Validated": false,
+  "FilePattern": null,
   "FileDefType": "Cloud Blob folder"
 }
