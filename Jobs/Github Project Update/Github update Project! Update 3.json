@@ -1,14 +1,14 @@
 {
   "ProjectId": 6,
   "ProjectName": "Github Project Update",
-  "JobName": "Github update Project!",
+  "JobName": "Github update Project! Update 3",
   "Logging": 0,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
   "Tasks": [
     {
-      "JobName": "Github update Project!",
+      "JobName": "Github update Project! Update 3",
       "TaskContent": "Write-Output \"test1\";",
       "TaskName": "AAAA Task",
       "ProjectId": 6,
@@ -58,7 +58,7 @@
   ],
   "JobSequences": [
     {
-      "JobName": "Github update Project!",
+      "JobName": "Github update Project! Update 3",
       "RunSequence": 1,
       "ParallelSequence": 0,
       "ParameterValues": null,
