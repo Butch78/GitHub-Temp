@@ -1,2 +1,0 @@
-Hello This is the Master File
-This File has been edit in Branch-1

@@ -1,0 +1,13 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Matthew-Project",
+  "JobName": "Youtube",
+  "Logging": 1,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}

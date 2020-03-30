@@ -1,0 +1,12 @@
+{
+  "Name": "Blob CSV",
+  "Path": "/matthew-container/snowflake",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": false,
+  "Encoding": "ANSI",
+  "Extension": "csv",
+  "Validated": false,
+  "FilePattern": null,
+  "FileDefType": "Cloud Blob folder"
+}

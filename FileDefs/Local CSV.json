@@ -1,0 +1,12 @@
+{
+  "Name": "Local CSV",
+  "Path": "C:\\ProgramData\\CSV",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "ASCII",
+  "Extension": "csv",
+  "Validated": false,
+  "FilePattern": null,
+  "FileDefType": "File System"
+}

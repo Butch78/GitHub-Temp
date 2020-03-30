@@ -1,0 +1,12 @@
+{
+  "Name": "CSV Duplicate",
+  "Path": "C:\\ProgramData\\CSV Duplicate",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "ASCII",
+  "Extension": "csv",
+  "Validated": false,
+  "FilePattern": null,
+  "FileDefType": "File System"
+}

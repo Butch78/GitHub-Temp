@@ -1,0 +1,12 @@
+{
+  "Name": "Matthew-Blob-CSV",
+  "Path": "/testcontainer",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "ANSI",
+  "Extension": "csv",
+  "Validated": false,
+  "FilePattern": null,
+  "FileDefType": "Cloud Blob folder"
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "Agri-BIo - ExpressionMatrix File",
+  "Path": "/dropzone-expressionmatrix",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "UTF-8",
+  "Extension": "csv",
+  "Validated": false,
+  "FilePattern": null,
+  "FileDefType": "Cloud Blob folder"
+}
