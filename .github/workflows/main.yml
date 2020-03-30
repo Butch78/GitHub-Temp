@@ -1,7 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-
 name: CI
-
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -9,22 +7,64 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
+    runs-on: [ubuntu-latest]
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-
-    name: $ArtifactOutputDir = (Get-ChildItem $env:GITHUB_WORKSPACE)[0].FullName
-    run: echo ${env:PATH}
-    shell: pwsh
-
-
+    # Runs a single command using the runners shell
+    - name: Import Tenant
+      env: 
+        ClientId: 232d2eeb-a023-479c-a478-86bf94d26cef
+        IdHostName: identity-au.perspectiveilm.com
+        ApiHostName: datagovernor-dev-spa.azurewebsites.net
+        AgentHostName: PerDev-DG21.bizdata.local
+      shell: pwsh
+      run: |
+        Add-Type -AssemblyName System.IO.Compression.FileSystem
+        $ClientId = $env:ClientId;
+        $IdHostName= $env:IdHostName;
+            
+        $TokenRequestBody = @{
+            "grant_type"    = "client_credentials";
+            "client_id"     = $ClientId;
+            "client_secret" = $ClientId;
+            "scope"         = "webApi"
+        };
+        $AccessToken = ((Invoke-WebRequest -Uri "https://$IdHostName/connect/token" -Method Post -Body $TokenRequestBody).Content | ConvertFrom-Json).access_token;
+            
+        $ArtifactOutputDir = (Get-ChildItem $env:SYSTEM_DEFAULTWORKINGDIRECTORY)[0].FullName
+        $ApiHostName = $env:ApiHost;
+        $BaseUrl = "https://$env:ApiHostName/api/v1/";
+        $AgentHostname = $env:AgentHostName;
+            
+        function Upload-Zip ($ZipLocation) {
+            $AccessHeaders = @{"Authorization" = "bearer $AccessToken" }
+            
+            $ZipUploadUrl = $BaseUrl + "Import/Zip?agentHostName=$AgentHostName";
+            
+            try {
+                $Response = Invoke-RestMethod $ZipUploadUrl -Method 'POST' -Headers $AccessHeaders -InFile $ZipLocation -ContentType "application/zip";
+                Write-Output $Response;
+            }
+            catch {
+                $Exception = $_.Exception;
+                $ErrorMessage = $Exception.Message;
+                if ($null -ne $Exception.Response) { 
+                    $Stream = $Exception.Response.GetResponseStream();
+                    $ContentReader = New-Object System.IO.StreamReader -ArgumentList $Stream;
+                    $ErrorMessage = $ContentReader.ReadToEnd()
+                }
+                throw $ErrorMessage;
+            }
+        }
+        
+        $ZipPath = "tenant.zip";
+        Remove-Item $ZipPath -ErrorAction Ignore;
+        [System.IO.Compression.ZipFile]::CreateFromDirectory($ArtifactOutputDir, $ZipPath, 0, $false);  
+        Upload-Zip -ZipLocation $ZipPath;
