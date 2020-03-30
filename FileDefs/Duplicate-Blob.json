@@ -1,0 +1,11 @@
+{
+  "Name": "Duplicate-Blob",
+  "Path": "/matthew-container",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": true,
+  "Encoding": "ANSI",
+  "Extension": "csv",
+  "Validated": false,
+  "FileDefType": "Cloud Blob folder"
+}

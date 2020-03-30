@@ -1,0 +1,12 @@
+{
+  "ProjectId": 4,
+  "ProjectName": "Persistent Staging",
+  "JobName": "Testsetsete",
+  "Logging": 0,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [],
+  "JobSequenceDependencies": []
+}

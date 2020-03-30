@@ -1,0 +1,11 @@
+{
+  "Name": "Pivoted-ExpressionMatrix",
+  "Path": "/pivoted-expressionmatrix",
+  "FileFormat": "Delimited",
+  "Delimiter": ",",
+  "Header": false,
+  "Encoding": "UTF-8",
+  "Extension": "csv",
+  "Validated": false,
+  "FileDefType": "Cloud Blob folder"
+}
