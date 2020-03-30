@@ -7,5 +7,6 @@
   "Encoding": "ANSI",
   "Extension": "csv",
   "Validated": false,
+  "FilePattern": null,
   "FileDefType": "Cloud Blob folder"
 }

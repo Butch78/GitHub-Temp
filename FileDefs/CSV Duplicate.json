@@ -7,5 +7,6 @@
   "Encoding": "ASCII",
   "Extension": "csv",
   "Validated": false,
+  "FilePattern": null,
   "FileDefType": "File System"
 }
