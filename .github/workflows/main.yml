@@ -20,7 +20,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Import Tenant
       env: 
-        ClientId: 232d2eeb-a023-479c-a478-86bf94d26cef
+        ClientId: 2f4c7565-3685-41d5-b92e-cdfcb3b7f2e3
         IdHostName: identity-au.perspectiveilm.com
         ApiHostName: datagovernor-dev-spa.azurewebsites.net
         AgentHostName: PerDev-DG21.bizdata.local
