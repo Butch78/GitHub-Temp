@@ -54,13 +54,21 @@ jobs:
             }
             catch {
                 $Exception = $_.Exception;
-                $ErrorMessage = $Exception.Message;
-                if ($null -ne $Exception.Response) { 
-                    $Stream = $Exception.Response.GetResponseStream();
-                    $ContentReader = New-Object System.IO.StreamReader -ArgumentList $Stream;
-                    $ErrorMessage = $ContentReader.ReadToEnd()
+                if ($PSVersionTable.PSVersion.Major -lt 6) {
+                    if ($Exception.Response) {  
+                        $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
+                        $Reader.BaseStream.Position = 0
+                        $Reader.DiscardBufferedData()
+                        $ResponseBody = $Reader.ReadToEnd()
+                        if ($ResponseBody.StartsWith('{')) {
+                            $ResponseBody = $ResponseBody | ConvertFrom-Json
+                        }
+                        throw $ResponseBody
+                    }
                 }
-                throw $ErrorMessage;
+                else {
+                    throw $Exception.ErrorDetails.Message
+                }
             }
         }
         
