@@ -63,11 +63,11 @@ jobs:
                         if ($ResponseBody.StartsWith('{')) {
                             $ResponseBody = $ResponseBody | ConvertFrom-Json
                         }
-                        Write-Error $ResponseBody
+                        Write-Output $ResponseBody
                     }
                 }
                 else {
-                    Write-Error $Exception.ErrorDetails.Message
+                    Write-Output $Exception.ErrorDetails.Message
                 }
             }
         }
