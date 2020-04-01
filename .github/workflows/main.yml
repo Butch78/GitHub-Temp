@@ -55,11 +55,11 @@ jobs:
             catch {
                 $Exception = $_.Exception;
                 $ErrorMessage = $Exception.Message;
-                if ($null -ne $Exception.Response) { 
-                    $Stream = $Exception.Response.GetResponseStream();
-                    $ContentReader = New-Object System.IO.StreamReader -ArgumentList $Stream;
-                    $ErrorMessage = $ContentReader.ReadToEnd()
-                }
+                # if ($null -ne $Exception.Response) { 
+                #     $Stream = $Exception.Response.GetResponseStream();
+                #     $ContentReader = New-Object System.IO.StreamReader -ArgumentList $Stream;
+                #     $ErrorMessage = $ContentReader.ReadToEnd()
+                # }
                 throw $ErrorMessage;
             }
         }
