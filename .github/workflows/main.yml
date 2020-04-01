@@ -26,6 +26,7 @@ jobs:
         AgentHostName: PerDev-DG21.bizdata.local
       shell: pwsh
       run: |
+        try {
         Add-Type -AssemblyName System.IO.Compression.FileSystem
         $ClientId = $env:ClientId;
         $IdHostName= $env:IdHostName;
@@ -76,3 +77,8 @@ jobs:
         Remove-Item $ZipPath -ErrorAction Ignore;
         [System.IO.Compression.ZipFile]::CreateFromDirectory($ArtifactOutputDir, $ZipPath, 0, $false);  
         Upload-Zip -ZipLocation $ZipPath;
+
+        }
+        catch {
+          Write-Output $_.Exception.Message;
+        }
