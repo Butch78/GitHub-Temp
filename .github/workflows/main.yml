@@ -26,7 +26,6 @@ jobs:
         AgentHostName: PerDev-DG21.bizdata.local
       shell: pwsh
       run: |
-        Get-ChildItem $env:GITHUB_WORKSPACE
         Add-Type -AssemblyName System.IO.Compression.FileSystem
         $ClientId = $env:ClientId;
         $IdHostName= $env:IdHostName;
@@ -39,7 +38,7 @@ jobs:
         };
         $AccessToken = ((Invoke-WebRequest -Uri "https://$IdHostName/connect/token" -Method Post -Body $TokenRequestBody).Content | ConvertFrom-Json).access_token;
             
-        $ArtifactOutputDir = (Get-ChildItem $env:GITHUB_WORKSPACE)[0].FullName
+        $ArtifactOutputDir = $env:GITHUB_WORKSPACE;
         $ApiHostName = $env:ApiHost;
         $BaseUrl = "https://$env:ApiHostName/api/v1/";
         $AgentHostname = $env:AgentHostName;
