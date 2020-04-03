@@ -39,7 +39,7 @@ jobs:
         };
         $AccessToken = ((Invoke-WebRequest -Uri "https://$IdHostName/connect/token" -Method Post -Body $TokenRequestBody).Content | ConvertFrom-Json).access_token;
             
-        $ArtifactOutputDir = D:\a\GitHub-Temp\GitHub-Temp
+        $ArtifactOutputDir = "D:\a\GitHub-Temp\GitHub-Temp"
         $ApiHostName = $env:ApiHost;
         $BaseUrl = "https://$env:ApiHostName/api/v1/";
         $AgentHostname = $env:AgentHostName;
