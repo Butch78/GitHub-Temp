@@ -77,6 +77,7 @@ jobs:
         Remove-Item $ZipPath -ErrorAction Ignore;
         Get-ChildItem -Recurse -Path $ZipPath | Compress-Archive -DestinationPath $ArtifactOutputDir
         Upload-Zip -ZipLocation $ZipPath;
+        Write-Output "Success?"
 
         }
         catch {
