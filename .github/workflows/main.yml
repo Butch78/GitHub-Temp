@@ -76,7 +76,7 @@ jobs:
         
         $ZipPath = "tenant.zip";
         Remove-Item $ZipPath -ErrorAction Ignore;
-        Write-output ls $ArtifactOutputDir\GitHub-Temp
+        ls $ArtifactOutputDir
         [System.IO.Compression.ZipFile]::CreateFromDirectory($ArtifactOutputDir, $ZipPath, 0, $true);
         Upload-Zip -ZipLocation $ZipPath;
         
