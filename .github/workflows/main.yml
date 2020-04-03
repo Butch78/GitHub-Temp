@@ -76,7 +76,7 @@ jobs:
         
         $ZipPath = "tenant.zip";
         Remove-Item $ZipPath -ErrorAction Ignore;
-        [System.IO.Compression.ZipFile]::CreateFromDirectory($ArtifactOutputDir, $ZipPath, 0, $false);
+        [System.IO.Compression.ZipFile]::CreateFromDirectory($ArtifactOutputDir, $ZipPath, 0, $true);
         Upload-Zip -ZipLocation $ZipPath;
         
 
