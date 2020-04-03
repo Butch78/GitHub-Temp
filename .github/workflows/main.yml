@@ -84,3 +84,8 @@ jobs:
         catch {
           Write-Output $_.Exception.Message;
         }
+    - name: Upload Zipped Tenant
+      uses: actions/upload-artifact@v1
+      with:
+        name: Tenant
+        path: "tenant.zip"
