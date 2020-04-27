@@ -83,7 +83,6 @@ jobs:
 
         }
         catch {
-          Write-Output "Matthew";
           Write-Output $_.Exception.Message;
         }
     - name: Upload Zipped Tenant
