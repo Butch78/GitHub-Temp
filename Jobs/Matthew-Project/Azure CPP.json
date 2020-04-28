@@ -104,13 +104,6 @@
       "PredecessorJobName": "Agent Setting Test",
       "PredecessorProjectName": "Matthew-Project",
       "ContinueOnFailure": "N"
-    },
-    {
-      "JobName": "Azure CPP",
-      "ProjectName": "Matthew-Project",
-      "PredecessorJobName": "Hubspot",
-      "PredecessorProjectName": "Matthew-Project",
-      "ContinueOnFailure": "N"
     }
   ]
 }

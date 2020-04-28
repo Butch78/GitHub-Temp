@@ -1,19 +1,19 @@
 {
   "ProjectId": 6,
-  "ProjectName": "Github Project Update",
-  "JobName": "Github update Project! Update 3",
+  "ProjectName": "Core Functions",
+  "JobName": "Retry Test 2",
   "Logging": 0,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
   "Tasks": [
     {
-      "JobName": "Github update Project! Update 3",
-      "TaskContent": "Write-Output \"test1\";",
-      "TaskName": "AAAA Task",
+      "JobName": "Retry Test 2",
+      "TaskContent": "Start-Sleep -s 180",
+      "TaskName": "Retry Test 2",
       "ProjectId": 6,
       "ProjectName": null,
-      "TaskTypeName": "Windows PowerShell",
+      "TaskTypeName": "PowerShell Core",
       "Logging": 1,
       "LastEndPoint": null,
       "PendingEndPoint": null,
@@ -58,13 +58,13 @@
   ],
   "JobSequences": [
     {
-      "JobName": "Github update Project! Update 3",
+      "JobName": "Retry Test 2",
       "RunSequence": 1,
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "AAAA Task",
+      "TaskName": "Retry Test 2",
       "Connection": null
     }
   ],
