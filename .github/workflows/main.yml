@@ -56,7 +56,6 @@ jobs:
                 Write-Output "Success?"
             }
             catch {
-                Write-Output "Failure on Upload"
                 $Exception = $_.Exception;
                 if ($PSVersionTable.PSVersion.Major -lt 6) {
                     if ($Exception.Response) {  
@@ -73,6 +72,7 @@ jobs:
                 else {
                     Write-Output $Exception.ErrorDetails.Message
                 }
+                Write-Output "Failure on Upload"
             }
         }
         
