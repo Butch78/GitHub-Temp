@@ -107,13 +107,6 @@
     {
       "JobName": "Bing Search",
       "ProjectName": "Matthew-Project",
-      "PredecessorJobName": "Hubspot",
-      "PredecessorProjectName": "Matthew-Project",
-      "ContinueOnFailure": "N"
-    },
-    {
-      "JobName": "Bing Search",
-      "ProjectName": "Matthew-Project",
       "PredecessorJobName": "Mail Check",
       "PredecessorProjectName": "Matthew-Project",
       "ContinueOnFailure": "N"
