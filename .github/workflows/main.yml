@@ -53,7 +53,7 @@ jobs:
                 $Response = Invoke-RestMethod $ZipUploadUrl -Method 'POST' -Headers $AccessHeaders -InFile $ZipLocation -ContentType "application/zip" -SkipHttpErrorCheck;            
             }
             catch {
-                      Write-Output "an unexpected error occurred";
+              Write-Output "an unexpected error occurred";
             }
 
             $ResponseMessage = $Response | Out-String;
