@@ -57,12 +57,7 @@ jobs:
                       return "1";
             }
 
-            
-
             $ResponseMessage = $Response | Out-String;
-
-            Write-Output $ResponseMessage;
-
             
             if ($ResponseMessage.Contains("Import failed"))
             {
@@ -79,7 +74,7 @@ jobs:
         }
         catch {
           Write-Output "Failed Run"
-          Write-Output $_.Exception.Message;
+          Throw $_.Exception.Message;
         }
     - name: Upload Zipped Tenant
       uses: actions/upload-artifact@v1
