@@ -59,7 +59,7 @@ jobs:
                 $Exception = $_.Exception;
                 try {
                   Write-Output "Start of Try";
-                  if ($PSVersionTable.PSVersion.Major -lt 6) {
+                  
                         Write-Output "PS Version Correct";
                       if ($Exception.Response) {  
                             Write-Output "Exception has a response";
@@ -72,10 +72,7 @@ jobs:
                             }
                             Write-Output $ResponseBody;                        
                       }
-                  }
-                  else {
-                      Write-Output $Exception.ErrorDetails.Message
-                  }
+                  
                 } catch {
                   Write-Output "Failed Error Message Output"
                   Write-Output $_.Exception.Message;
