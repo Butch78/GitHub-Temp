@@ -25,7 +25,9 @@ jobs:
         ApiHostName: datagovernor-dev-api.azurewebsites.net
         AgentHostName: PerDev-DG21.bizdata.local
       shell: pwsh
-      run:         
+      run: |
+        $ExitCode = 0;
+        try {
         Add-Type -AssemblyName System.IO.Compression.FileSystem
         $ClientId = $env:ClientId;
         $IdHostName= $env:IdHostName;
@@ -53,14 +55,13 @@ jobs:
             }
             catch {
                       Write-Output "an unexpected error occurred";
-                      return "1";
+                      $ExitCode = 1;
             }
 
             $ResponseMessage = $Response | Out-String;
             
             if ($ResponseMessage.Contains("Import failed"))
             {
-              Write-Output $ResponseMessage
               throw $ResponseMessage;
             }
                 
@@ -70,7 +71,15 @@ jobs:
         Remove-Item $ZipPath -ErrorAction Ignore;
         ls -r $ArtifactOutputDir
         Compress-Archive -Path $ArtifactOutputDir -DestinationPath $ZipPath
-        Upload-Zip -ZipLocation $ZipPath;        
+        Upload-Zip -ZipLocation $ZipPath;
+        }
+        catch {
+          Write-Output "Failed Run"
+          Write-Output $_.Exception.Message;
+          $ExitCode = 1;
+        }
+
+        return $ExitCode;
 
     - name: Upload Zipped Tenant
       uses: actions/upload-artifact@v1
