@@ -50,15 +50,14 @@ jobs:
             $ZipUploadUrl = $BaseUrl + "Import/Zip?agentHostName=$AgentHostName";
             
             try {
-                Write-Output "Start of upload";
                 $Response = Invoke-RestMethod $ZipUploadUrl -Method 'POST' -Headers $AccessHeaders -InFile $ZipLocation -ContentType "application/zip" -SkipHttpErrorCheck;            
             }
             catch {
                       Write-Output "an unexpected error occurred";
                       return 1;
             }
-            
-            if ($Repsonse -contains '*Import failed*')
+
+            if ($Repsonse -like '*Import failed*')
             {
               Write-Output $Response;
               return 1;
