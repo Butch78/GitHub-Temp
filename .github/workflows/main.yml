@@ -50,6 +50,7 @@ jobs:
             $ZipUploadUrl = $BaseUrl + "Import/Zip?agentHostName=$AgentHostName";
             
             try {
+                Write-Output "Start of upload";
                 $Response = Invoke-RestMethod $ZipUploadUrl -Method 'POST' -Headers $AccessHeaders -InFile $ZipLocation -ContentType "application/zip";
                 Write-Output $Response;
                 Write-Output "Success?"
