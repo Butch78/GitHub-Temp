@@ -54,7 +54,6 @@ jobs:
             }
             catch {
                       Write-Output "an unexpected error occurred";
-                      return "1";
             }
 
             $ResponseMessage = $Response | Out-String;
