@@ -58,7 +58,9 @@ jobs:
             catch {
                 $Exception = $_.Exception;
                 try {
+                  Write-Output "Start of Try";
                   if ($PSVersionTable.PSVersion.Major -lt 6) {
+                        Write-Output "PS Version Correct";
                       if ($Exception.Response) {  
                             Write-Output "Exception has a response";
                             $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
