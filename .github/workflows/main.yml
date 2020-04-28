@@ -26,7 +26,6 @@ jobs:
         AgentHostName: PerDev-DG21.bizdata.local
       shell: pwsh
       run: |
-        $ExitCode = 0;
         try {
         Add-Type -AssemblyName System.IO.Compression.FileSystem
         $ClientId = $env:ClientId;
@@ -55,7 +54,7 @@ jobs:
             }
             catch {
                       Write-Output "an unexpected error occurred";
-                      $ExitCode = 1;
+                      return "1";
             }
 
             $ResponseMessage = $Response | Out-String;
@@ -76,11 +75,7 @@ jobs:
         catch {
           Write-Output "Failed Run"
           Write-Output $_.Exception.Message;
-          $ExitCode = 1;
         }
-
-        return $ExitCode;
-
     - name: Upload Zipped Tenant
       uses: actions/upload-artifact@v1
       with:
