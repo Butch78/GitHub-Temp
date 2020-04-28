@@ -57,26 +57,27 @@ jobs:
             }
             catch {
                 $Exception = $_.Exception;
-                if ($PSVersionTable.PSVersion.Major -lt 6) {
-                    if ($Exception.Response) {  
-                        try {
-                          $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
-                          $Reader.BaseStream.Position = 0
-                          $Reader.DiscardBufferedData()
-                          $ResponseBody = $Reader.ReadToEnd()
-                          if ($ResponseBody.StartsWith('{')) {
-                              $ResponseBody = $ResponseBody | ConvertFrom-Json
-                          }
-                          Write-Output $ResponseBody
-                        } catch {
-                          Write-Output "Failed Error Message Output"
-                          Write-Output $_.Exception.Message;
-                        }  
-                    }
-                }
-                else {
-                    Write-Output $Exception.ErrorDetails.Message
-                }
+                try {
+                  if ($PSVersionTable.PSVersion.Major -lt 6) {
+                      if ($Exception.Response) {  
+                          
+                            $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
+                            $Reader.BaseStream.Position = 0
+                            $Reader.DiscardBufferedData()
+                            $ResponseBody = $Reader.ReadToEnd()
+                            if ($ResponseBody.StartsWith('{')) {
+                                $ResponseBody = $ResponseBody | ConvertFrom-Json
+                            }
+                            Write-Output $ResponseBody;                        
+                      }
+                  }
+                  else {
+                      Write-Output $Exception.ErrorDetails.Message
+                  }
+                } catch {
+                  Write-Output "Failed Error Message Output"
+                  Write-Output $_.Exception.Message;
+                }  
                 Write-Output "Failure on Upload"
             }
         }
