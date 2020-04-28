@@ -57,10 +57,10 @@ jobs:
             }
             catch {
                 $Exception = $_.Exception;
-                Start-Sleep -s 5
                 try {
                   if ($PSVersionTable.PSVersion.Major -lt 6) {
                       if ($Exception.Response) {  
+                            Write-Output "Exception has a response";
                             $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
                             $Reader.BaseStream.Position = 0
                             $Reader.DiscardBufferedData()
