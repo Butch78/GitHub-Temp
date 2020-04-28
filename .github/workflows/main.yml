@@ -55,6 +55,7 @@ jobs:
                 Write-Output "Success?"
             }
             catch {
+                Write-Output "Failure on Upload"
                 $Exception = $_.Exception;
                 if ($PSVersionTable.PSVersion.Major -lt 6) {
                     if ($Exception.Response) {  
@@ -79,10 +80,9 @@ jobs:
         ls -r $ArtifactOutputDir
         Compress-Archive -Path $ArtifactOutputDir -DestinationPath $ZipPath
         Upload-Zip -ZipLocation $ZipPath;
-        
-
         }
         catch {
+          Write-Output "Failed Run"
           Write-Output $_.Exception.Message;
         }
     - name: Upload Zipped Tenant
