@@ -51,7 +51,7 @@ jobs:
             
             try {
                 Write-Output "Start of upload";
-                $Response = Invoke-RestMethod $ZipUploadUrl -Method 'POST' -Headers $AccessHeaders -InFile $ZipLocation -ContentType "application/zip";
+                $Response = Invoke-RestMethod $ZipUploadUrl -Method 'POST' -Headers $AccessHeaders -InFile $ZipLocation -ContentType "application/zip" -SkipHttpErrorCheck;
                 Write-Output $Response;
                 Write-Output "Success?"
             }
@@ -59,9 +59,7 @@ jobs:
                 $Exception = $_.Exception;
                 try {
                   Write-Output "Start of Try";
-                  Write-Output ("PS Version " + $PSVersionTable.PSVersion.ToString());
-                  if ($PSVersionTable.PSVersion.Major -lt 6) {
-                        Write-Output "PS Version Correct";
+                  if ($PSVersionTable.PSVersion.Major -lt 7) {
                       if ($Exception.Response) {  
                             Write-Output "Exception has a response";
                             $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
