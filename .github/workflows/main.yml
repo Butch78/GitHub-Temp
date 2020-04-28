@@ -57,9 +57,14 @@ jobs:
                       return "1";
             }
 
-            if ($Repsonse.Contains("Import failed"))
+            Write-Output $Response;
+
+            $ResponseMessage = $Response | Out-String;
+
+
+            if ($ResponseMessage.Contains("Import failed"))
             {
-              Write-Output $Response;
+              Write-Output $ResponseMessage;
               return "1";
             }
                 
