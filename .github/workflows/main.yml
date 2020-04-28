@@ -25,8 +25,7 @@ jobs:
         ApiHostName: datagovernor-dev-api.azurewebsites.net
         AgentHostName: PerDev-DG21.bizdata.local
       shell: pwsh
-      run: |
-        try {
+      run:         
         Add-Type -AssemblyName System.IO.Compression.FileSystem
         $ClientId = $env:ClientId;
         $IdHostName= $env:IdHostName;
@@ -70,12 +69,8 @@ jobs:
         Remove-Item $ZipPath -ErrorAction Ignore;
         ls -r $ArtifactOutputDir
         Compress-Archive -Path $ArtifactOutputDir -DestinationPath $ZipPath
-        Upload-Zip -ZipLocation $ZipPath;
-        }
-        catch {
-          Write-Output "Failed Run"
-          Throw $_.Exception.Message;
-        }
+        Upload-Zip -ZipLocation $ZipPath;        
+
     - name: Upload Zipped Tenant
       uses: actions/upload-artifact@v1
       with:
