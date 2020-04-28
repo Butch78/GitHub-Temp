@@ -62,7 +62,7 @@ jobs:
                         Write-Output "PS Version Correct";
                       if ($Exception.Response) {  
                             Write-Output "Exception has a response";
-                            Write-Output $Exception.Response;
+                            Write-Output $Exception.Response.ErrorDetails.Message;
                             $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
                             $Reader.BaseStream.Position = 0
                             $Reader.DiscardBufferedData()
