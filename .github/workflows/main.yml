@@ -73,7 +73,7 @@ jobs:
         }
         catch {
           Write-Output "Failed Run"
-          Write-Output $_.Exception.Message;
+          Write-Error $_.Exception.Message;
         }
     - name: Upload Zipped Tenant
       uses: actions/upload-artifact@v1
