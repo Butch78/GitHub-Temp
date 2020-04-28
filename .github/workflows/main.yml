@@ -66,8 +66,7 @@ jobs:
             
             if ($ResponseMessage.Contains("Import failed"))
             {
-              Write-Output $ResponseMessage;
-              Break
+              throw $ResponseMessage;
             }
                 
         }
