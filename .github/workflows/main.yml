@@ -57,6 +57,7 @@ jobs:
                       return 1;
             }
 
+              Write-Output $Response;
             if ($Repsonse -like '*Import failed*')
             {
               Write-Output $Response;
