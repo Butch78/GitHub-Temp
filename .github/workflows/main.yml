@@ -58,7 +58,7 @@ jobs:
             }
 
               Write-Output $Response;
-            if ($Repsonse -like '*Import failed*')
+            if ($Repsonse.Contains("Import failed"))
             {
               Write-Output $Response;
               return 1;
