@@ -59,10 +59,10 @@ jobs:
                 $Exception = $_.Exception;
                 try {
                   Write-Output "Start of Try";
-                  
                         Write-Output "PS Version Correct";
                       if ($Exception.Response) {  
                             Write-Output "Exception has a response";
+                            Write-Output $Exception.Response;
                             $Reader = New-Object System.IO.StreamReader($Exception.Response.GetResponseStream())
                             $Reader.BaseStream.Position = 0
                             $Reader.DiscardBufferedData()
@@ -72,7 +72,7 @@ jobs:
                             }
                             Write-Output $ResponseBody;                        
                       }
-                  
+                  }
                 } catch {
                   Write-Output "Failed Error Message Output"
                   Write-Output $_.Exception.Message;
