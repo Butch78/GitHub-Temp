@@ -1,0 +1,13 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Wine-Project",
+  "JobName": "Cvent Import",
+  "Logging": 1,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}
