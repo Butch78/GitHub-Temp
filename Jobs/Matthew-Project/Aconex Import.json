@@ -1,14 +1,14 @@
 {
   "ProjectId": 1,
   "ProjectName": "Matthew-Project",
-  "JobName": "Aconex",
+  "JobName": "Aconex Import",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
   "Tasks": [
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Mail",
       "ProjectId": 1,
@@ -84,7 +84,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex MailClosedOutDetails",
       "ProjectId": 1,
@@ -160,7 +160,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Projects",
       "ProjectId": 1,
@@ -236,7 +236,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Tasks",
       "ProjectId": 1,
@@ -339,7 +339,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Documents",
       "ProjectId": 1,
@@ -415,7 +415,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Mail Metadata",
       "ProjectId": 1,
@@ -491,7 +491,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex MailForm Fields",
       "ProjectId": 1,
@@ -567,7 +567,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Restricted Fields",
       "ProjectId": 1,
@@ -643,7 +643,7 @@
       "TaskConnections": []
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "TaskContent": "",
       "TaskName": "Aconex Project ProjectResponsibilities",
       "ProjectId": 1,
@@ -721,7 +721,7 @@
   ],
   "JobSequences": [
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 1,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -731,7 +731,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 2,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -741,7 +741,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 3,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -751,7 +751,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 4,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -761,7 +761,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 5,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -771,7 +771,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 6,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -781,7 +781,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 7,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -791,7 +791,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 8,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -801,7 +801,7 @@
       "Connection": null
     },
     {
-      "JobName": "Aconex",
+      "JobName": "Aconex Import",
       "RunSequence": 9,
       "ParallelSequence": 0,
       "ParameterValues": null,
