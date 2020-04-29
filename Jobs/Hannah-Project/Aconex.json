@@ -1,0 +1,104 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Aconex",
+  "Logging": 1,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [
+    {
+      "JobName": null,
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex Mail",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex MailClosedOutDetails",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 3,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex Projects",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 4,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex Tasks",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 5,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex Documents",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 6,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex Mail Metadata",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 7,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex MailForm Fields",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 8,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "Aconex Restricted Fields",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 9,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Aconex Project ProjectResponsibilities",
+      "Connection": null
+    }
+  ],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}

@@ -1,9 +1,9 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Retry Test 2",
-  "Logging": 0,
-  "LogBatchSize": 5,
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Kepion",
+  "Logging": 1,
+  "LogBatchSize": 2,
   "CancelJobFlag": false,
   "LoggingType": null,
   "Tasks": [],
@@ -15,7 +15,7 @@
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Retry Test 2",
+      "TaskName": "Kepion UI Help",
       "Connection": null
     }
   ],

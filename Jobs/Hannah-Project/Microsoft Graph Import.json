@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Incremental",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Microsoft Graph Import",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -14,8 +14,18 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Microsoft Graph Import",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
       "Active": true,
-      "TaskName": "Incremental",
+      "TaskName": "Graph Import 2.0",
       "Connection": null
     }
   ],

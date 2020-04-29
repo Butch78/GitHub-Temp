@@ -1,0 +1,32 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Bing Search Kate",
+  "Logging": 0,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [
+    {
+      "JobName": null,
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "adsfasdfasdf",
+      "Connection": null
+    }
+  ],
+  "JobSequenceDependencies": [],
+  "JobDependencies": [
+    {
+      "JobName": "Bing Search Kate",
+      "ProjectName": "Hannah-Project",
+      "PredecessorJobName": "Mail Check",
+      "PredecessorProjectName": "Hannah-Project",
+      "ContinueOnFailure": "N"
+    }
+  ]
+}

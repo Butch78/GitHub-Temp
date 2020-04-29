@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Data Migrations",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Kill And Switch Test",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -10,12 +10,22 @@
   "JobSequences": [
     {
       "JobName": null,
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "SnowFlake Import",
+      "Connection": null
+    },
+    {
+      "JobName": null,
       "RunSequence": 2,
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Core SQL to SQL",
+      "TaskName": "Snowflake to Snowflake",
       "Connection": null
     },
     {
@@ -24,18 +34,8 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
-      "Active": true,
-      "TaskName": "SQL to Snowflake",
-      "Connection": null
-    },
-    {
-      "JobName": null,
-      "RunSequence": 1,
-      "ParallelSequence": 0,
-      "ParameterValues": null,
-      "ConnectionId": null,
-      "Active": true,
-      "TaskName": "Simple SQL Server to SQL Server",
+      "Active": false,
+      "TaskName": "Snowflake to SQL",
       "Connection": null
     }
   ],

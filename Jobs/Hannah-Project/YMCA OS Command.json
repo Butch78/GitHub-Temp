@@ -1,8 +1,8 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Dependencies",
-  "Logging": 0,
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "YMCA OS Command",
+  "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
@@ -15,7 +15,7 @@
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Succesful Task ",
+      "TaskName": "Powershell Restore",
       "Connection": null
     },
     {
@@ -24,8 +24,8 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
-      "Active": true,
-      "TaskName": "Second Successful Task",
+      "Active": false,
+      "TaskName": "Import MySQL",
       "Connection": null
     },
     {
@@ -34,34 +34,34 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
-      "Active": true,
-      "TaskName": "3rd Sucessful Task",
+      "Active": false,
+      "TaskName": "Drop MYSQL",
       "Connection": null
     }
   ],
   "JobSequenceDependencies": [
     {
-      "JobName": "Dependencies",
-      "ProjectName": "Core Functions",
-      "TaskName": "Second Successful Task",
+      "JobName": "YMCA OS Command",
+      "ProjectName": "Hannah-Project",
+      "TaskName": "Import MySQL",
       "TaskRunSequence": 2,
-      "PredecessorTaskName": "Succesful Task ",
+      "PredecessorTaskName": "Powershell Restore",
       "PredecessorTaskRunSequence": 1
     },
     {
-      "JobName": "Dependencies",
-      "ProjectName": "Core Functions",
-      "TaskName": "3rd Sucessful Task",
+      "JobName": "YMCA OS Command",
+      "ProjectName": "Hannah-Project",
+      "TaskName": "Drop MYSQL",
       "TaskRunSequence": 3,
-      "PredecessorTaskName": "Succesful Task ",
+      "PredecessorTaskName": "Powershell Restore",
       "PredecessorTaskRunSequence": 1
     },
     {
-      "JobName": "Dependencies",
-      "ProjectName": "Core Functions",
-      "TaskName": "3rd Sucessful Task",
+      "JobName": "YMCA OS Command",
+      "ProjectName": "Hannah-Project",
+      "TaskName": "Drop MYSQL",
       "TaskRunSequence": 3,
-      "PredecessorTaskName": "Second Successful Task",
+      "PredecessorTaskName": "Import MySQL",
       "PredecessorTaskRunSequence": 2
     }
   ],

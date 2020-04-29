@@ -1,8 +1,8 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Retry Test 2",
-  "Logging": 0,
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Oracle Import",
+  "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
@@ -14,8 +14,18 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Oracle",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
       "Active": true,
-      "TaskName": "Retry Test 2",
+      "TaskName": "Oracle Float Import",
       "Connection": null
     }
   ],

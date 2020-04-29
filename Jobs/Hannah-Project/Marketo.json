@@ -1,8 +1,8 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Retry Test 2",
-  "Logging": 0,
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Marketo",
+  "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
@@ -15,7 +15,7 @@
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Retry Test 2",
+      "TaskName": "Marketo Import",
       "Connection": null
     }
   ],

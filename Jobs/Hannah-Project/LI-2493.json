@@ -1,0 +1,74 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "LI-2493",
+  "Logging": 1,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [
+    {
+      "JobName": null,
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "ODBC SQL to SQL",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "ODBC SQL to SQL  Tables",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 3,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "ODBC Excel to SQL",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 4,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "ODBC SQL to SQL Query Cast",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 5,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "ODBC SQL to SQL TImestamp Query",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 6,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Excel to ODBC",
+      "Connection": null
+    }
+  ],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}

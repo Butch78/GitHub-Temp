@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Incremental",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Azure CPP",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -15,10 +15,18 @@
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Incremental",
+      "TaskName": "AZure Databases",
       "Connection": null
     }
   ],
   "JobSequenceDependencies": [],
-  "JobDependencies": []
+  "JobDependencies": [
+    {
+      "JobName": "Azure CPP",
+      "ProjectName": "Hannah-Project",
+      "PredecessorJobName": "Agent Setting Test",
+      "PredecessorProjectName": "Hannah-Project",
+      "ContinueOnFailure": "N"
+    }
+  ]
 }

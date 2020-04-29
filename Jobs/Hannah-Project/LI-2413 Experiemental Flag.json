@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Incremental",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "LI-2413 Experiemental Flag",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -14,8 +14,18 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Tags on Logs",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
       "Active": true,
-      "TaskName": "Incremental",
+      "TaskName": "Simple Transfer",
       "Connection": null
     }
   ],

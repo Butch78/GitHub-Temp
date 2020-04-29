@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Data Migrations",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Matthew Snowflake",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -10,12 +10,22 @@
   "JobSequences": [
     {
       "JobName": null,
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Snowflake UI",
+      "Connection": null
+    },
+    {
+      "JobName": null,
       "RunSequence": 2,
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
-      "Active": true,
-      "TaskName": "Core SQL to SQL",
+      "Active": false,
+      "TaskName": "MatthewStaging6",
       "Connection": null
     },
     {
@@ -24,18 +34,18 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
-      "Active": true,
-      "TaskName": "SQL to Snowflake",
+      "Active": false,
+      "TaskName": "SQL Staging Man",
       "Connection": null
     },
     {
       "JobName": null,
-      "RunSequence": 1,
+      "RunSequence": 4,
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Simple SQL Server to SQL Server",
+      "TaskName": "SQL Server Timestamp to Snowflake ",
       "Connection": null
     }
   ],

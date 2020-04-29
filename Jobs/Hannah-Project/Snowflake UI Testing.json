@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Retry Test 2",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Snowflake UI Testing",
   "Logging": 0,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -14,8 +14,18 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
+      "Active": false,
+      "TaskName": "Snowflake",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
       "Active": true,
-      "TaskName": "Retry Test 2",
+      "TaskName": "Snowflake to Snowflake Import Test",
       "Connection": null
     }
   ],

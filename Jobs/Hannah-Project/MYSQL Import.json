@@ -1,0 +1,204 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "MYSQL Import",
+  "Logging": 1,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [],
+  "JobSequences": [
+    {
+      "JobName": null,
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MySQL Table Import",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MySQL View Import",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 3,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "YugeImport",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 4,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "VugeImport",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 5,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "VUGEData to Snowflake",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 7,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQl Data Numeric Type Test",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 15,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQL to Snowflake All Date Formats",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 6,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQL Date Type Test",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 8,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQL at other Data Types",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 9,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQL UNSIGNED TINYINT",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 10,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQL Combined INTs",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 11,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MYSQL Query",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 12,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MSQL Incremetenal",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 13,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "MSQL Incremental Query",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 14,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "SQL Server to Snowflake (Binary)",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 16,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "MYSQL to Snowflake All Numeric Data",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 17,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "MYSQL to Snowflake All Other Data Types",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 18,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": false,
+      "TaskName": "SQL SERVER to SNOWFLAKE MIN DOUBLE ",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 19,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "Import Stored Proc MySQL",
+      "Connection": null
+    }
+  ],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}

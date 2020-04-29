@@ -1,7 +1,7 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Incremental",
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Agent Setting Test",
   "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
@@ -15,7 +15,17 @@
       "ParameterValues": null,
       "ConnectionId": null,
       "Active": true,
-      "TaskName": "Incremental",
+      "TaskName": "Agent Test 1",
+      "Connection": null
+    },
+    {
+      "JobName": null,
+      "RunSequence": 2,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "Agent Task 2",
       "Connection": null
     }
   ],

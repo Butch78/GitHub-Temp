@@ -1,8 +1,8 @@
 {
-  "ProjectId": 6,
-  "ProjectName": "Core Functions",
-  "JobName": "Retry Test 2",
-  "Logging": 0,
+  "ProjectId": 1,
+  "ProjectName": "Hannah-Project",
+  "JobName": "Empty Job",
+  "Logging": 1,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
@@ -14,8 +14,8 @@
       "ParallelSequence": 0,
       "ParameterValues": null,
       "ConnectionId": null,
-      "Active": true,
-      "TaskName": "Retry Test 2",
+      "Active": false,
+      "TaskName": "-1 NEw Man",
       "Connection": null
     }
   ],
