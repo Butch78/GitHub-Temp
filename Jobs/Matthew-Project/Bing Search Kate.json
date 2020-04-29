@@ -1,14 +1,14 @@
 {
   "ProjectId": 1,
   "ProjectName": "Matthew-Project",
-  "JobName": "Bing Search",
+  "JobName": "Bing Search Kate",
   "Logging": 0,
   "LogBatchSize": 5,
   "CancelJobFlag": false,
   "LoggingType": null,
   "Tasks": [
     {
-      "JobName": "Bing Search",
+      "JobName": "Bing Search Kate",
       "TaskContent": "",
       "TaskName": "adsfasdfasdf",
       "ProjectId": 1,
@@ -92,7 +92,7 @@
   ],
   "JobSequences": [
     {
-      "JobName": "Bing Search",
+      "JobName": "Bing Search Kate",
       "RunSequence": 1,
       "ParallelSequence": 0,
       "ParameterValues": null,
@@ -105,7 +105,7 @@
   "JobSequenceDependencies": [],
   "JobDependencies": [
     {
-      "JobName": "Bing Search",
+      "JobName": "Bing Search Kate",
       "ProjectName": "Matthew-Project",
       "PredecessorJobName": "Mail Check",
       "PredecessorProjectName": "Matthew-Project",

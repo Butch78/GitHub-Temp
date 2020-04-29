@@ -386,7 +386,7 @@
     {
       "JobName": "Accon:ex:",
       "ProjectName": "Matthew-Project",
-      "PredecessorJobName": "Bing Search",
+      "PredecessorJobName": "Bing Search Kate",
       "PredecessorProjectName": "Matthew-Project",
       "ContinueOnFailure": "N"
     }
