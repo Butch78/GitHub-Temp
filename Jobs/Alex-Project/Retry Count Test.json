@@ -1,0 +1,73 @@
+{
+  "ProjectId": 1,
+  "ProjectName": "Alex-Project",
+  "JobName": "Retry Count Test",
+  "Logging": 1,
+  "LogBatchSize": 5,
+  "CancelJobFlag": false,
+  "LoggingType": null,
+  "Tasks": [
+    {
+      "JobName": "Retry Count Test",
+      "TaskContent": "Console.log(\"Fail\");",
+      "TaskName": "Failed Task",
+      "ProjectId": 1,
+      "ProjectName": null,
+      "TaskTypeName": "Windows PowerShell",
+      "Logging": 1,
+      "LastEndPoint": null,
+      "PendingEndPoint": null,
+      "ParameterNames": "FlatFileDetectDataTypeMaxRow",
+      "ParameterDefaults": "250",
+      "SourceSchema": null,
+      "TargetSchema": null,
+      "SourceConnectionName": null,
+      "TargetConnectionName": null,
+      "SourceFileName": null,
+      "TargetFileName": null,
+      "SourceClusterName": null,
+      "TargetClusterName": null,
+      "SourceFileId": null,
+      "TargetFileId": null,
+      "MaxThreads": 4,
+      "ParallelDm": true,
+      "PythonEnvironmentName": null,
+      "RunWithAgentId": 1,
+      "Agent": {
+        "AgentId": 1,
+        "AgentName": "BizData-L145.bizdata.local",
+        "HostName": "BizData-L145.bizdata.local",
+        "DateCreated": "0001-01-01T00:00:00",
+        "DateUpdated": "0001-01-01T00:00:00",
+        "HeartBeat": "0001-01-01T00:00:00",
+        "Version": null,
+        "TaskQueues": null,
+        "ConnectionId": null,
+        "IsHealthy": false
+      },
+      "PythonEnvironment": null,
+      "SourceConnection": null,
+      "TargetConnection": null,
+      "SourceCluster": null,
+      "TargetCluster": null,
+      "LoggingType": null,
+      "TaskType": null,
+      "TaskTable": [],
+      "TaskConnections": []
+    }
+  ],
+  "JobSequences": [
+    {
+      "JobName": "Retry Count Test",
+      "RunSequence": 1,
+      "ParallelSequence": 0,
+      "ParameterValues": null,
+      "ConnectionId": null,
+      "Active": true,
+      "TaskName": "Failed Task",
+      "Connection": null
+    }
+  ],
+  "JobSequenceDependencies": [],
+  "JobDependencies": []
+}
